@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#c4d9ff, #8a8af6);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-bottom: 4px solid black;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.main .titles{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.titles > nav {
+    cursor: pointer;
+    font-size: 1.25rem;
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid black;    
+    padding: 1rem;
+}
+
+nav.current {
+    background: #3b3bb6;
+    color: #fff;
+}
+
+.main .content {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: url(images/teaFirst.jpg);
+    background-size: 1500px auto;
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+}
+
+.item-divider,
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.item-divider {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0.5rem;
+}
